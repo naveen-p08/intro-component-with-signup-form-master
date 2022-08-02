@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background: url(images/bg-intro-mobile.png), hsl(0, 100%, 74%) no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.container{
+    margin: 5em 2em 3em 2em;
+}
+.main-section{
+    text-align: center;
+    margin-bottom: 3em;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 1em;
+}
+
+.button{
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background:  hsl(248, 32%, 49%);
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, .15);
+}
+.button span{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+form{
+    color: hsl(246, 25%, 77%);
+    background-color: white;
+    padding: 1.5em;
+    box-shadow: 0 8px 0 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+
+form > *{
+    display: block;
+    width: 100%;
+    margin-bottom: .8em;
+}
+.form-field{
+    width: 100%;
+    padding: 1.3em;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/*===========================================================================================*/
+.form-status{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1.7em;
+    position: relative;
+}
+
+.form-status img{
+    /* opacity: 0; */
+    position: absolute;
+    right: 2em;
+    top: 1.8em;
+}
+.error-msg{
+    display: block;
+    margin-top: .2em;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+
+.error{
+    border-color: hsl(0, 100%, 74%);
+}
+/*==========================================================================================*/
+.submit-btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow:inset 0 -4px 0 0 rgba(0, 0, 0, .15);
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 0;
+}
+.terms{
+    font-size: 1.1rem;
+    text-align: center;
+    padding-inline: 2em;
+    margin-top: 1em;
+    line-height: 1.8;
+}
+.terms span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-field:focus{
+    border-color: hsl(248, 32%, 49%);
+}
+
+@media (min-width: 700px){
+    body{
+        background: url(images/bg-intro-desktop.png), hsl(0, 100%, 74%) no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+    }
+    .container{
+        margin-block: 2em;
+        margin-inline: auto;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 20px;
+    }
+    .main-section{
+        width: 50%;
+        text-align: left;
+        padding-right: 4em;
+    }
+    .section-title{
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+        font-size: 4rem;
+    }
+    .main-section p{
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+}
+
+
+
+.hidden{
+    display: none;
+}
